@@ -4,138 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <style>
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-            padding: 10px;
-        }
-
-        #navSection {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row;
-            padding: 10px;
-        }
-
-        #profile_pic {
-            width: 2vw;
-            height: 2vw; 
-            border-radius: 50%;
-            border: 3px solid #000000;
-        }
-
-        #profile_pic_bio {
-            width: 10vw;
-            height: 10vw; 
-            border-radius: 50%;
-            border: 3px solid #000000;
-        }
-
-        #big_profile_pic {
-            object-fit:scale-down; 
-            height: 50vh;
-            width: 100vw;
-            margin-bottom: 80px;
-        }
-
-        .link {
-            margin: 10px;
-        }
-
-        a:link {
-            color: white;
-        }
-
-        a:visited {
-            color: white; 
-        }
-
-        a:hover {
-            color: yellow; 
-        }
-
-        a:active {
-            color: green;
-        }
-
-        body {
-                background: linear-gradient( to bottom, 
-                #121212 20%, 
-                #2D9CDB 60%, 
-                #388856 100% 
-            );
-            padding: 10px;
-        }
-
-        #bioSection {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            border-radius: 10px;
-            border: 3px solid #000000;
-            padding: 10px;
-        }
-
-        #bio{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        h2,h1{
-            margin-top: 50px;
-            color: whitesmoke;
-        }
-
-        address{
-            color: white;
-        }
-
-        p{
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="./Styles/homeStyles.css"/>
 </head>
 <body>
     <!--header-->
     <header>
-        <img id="profile_pic" src="./Assets/IMG-20241114-WA0001.jpg" alt="profile image"/>
-        <h1> Siyabonga's Portfolio</h1>
-        <section id="navSection">
-
-            <a class="link" style="color: green"  href="">
-                Home
-            </a>
-
-            <a class="link" href="./about/about.html">
-                About
-            </a>
+        <nav>
+            <section id="icon_and_name">
+                <img id="profile_pic" src="./Assets/IMG-20241114-WA0001.jpg" alt="profile image"/>
+                <h1> Siyabonga's Portfolio</h1>
+            </section>
             
-            <a class="link" href="./contacts/contacts.html">
-                Contacts
-            </a>
-        </section>
+            <section id="navSection">
+
+                <a class="link" style="color: green"  href="">
+                    Home
+                </a>
+
+                <a class="link" href="./about/about.html">
+                    About
+                </a>
+            
+                <a class="link" href="./contacts/contacts.html">
+                    Contacts
+                </a>
+            </section>
+        </nav>
+        
     </header>
     <hr>
 
-    <!-- sections-->
-    <img id="big_profile_pic" src="./Assets/Portfolio.png" alt="profile pic"/>
-    <section id="bioSection">
-        <section id="bio">
-            <h2>Siyabonga Khanyile</h2>
-            <p>I am a passionate Android Developer with experience in Kotlin, Jetpack Compose, and mobile UI/UX.<br> 
-                I am now expanding my skill set to become a full-stack mobile and web developer. <br>
-                My goal is to build applications across multiple platforms.<br>
-                I am always learning, problem-solving, and pushing my limits to create impactful digital solutions</p>
+    <!--main-->
+     <main>
+        <img id="big_profile_pic" src="./Assets/Portfolio.png" alt="profile pic"/>
+        <section id="bioSection">
+            <section id="bio">
+                <h2>Siyabonga Khanyile</h2>
+                <p>I am a passionate Android Developer with experience in Kotlin, Jetpack Compose, and mobile UI/UX.<br> 
+                    I am now expanding my skill set to become a full-stack mobile and web developer. <br>
+                    My goal is to build applications across multiple platforms.<br>
+                    I am always learning, problem-solving, and pushing my limits to create impactful digital solutions</p>
+            </section>
+            <img id="profile_pic_bio" src="./Assets/IMG-20241114-WA0001.jpg" alt="profile pic"/>
         </section>
-        <img id="profile_pic_bio" src="./Assets/IMG-20241114-WA0001.jpg" alt="profile pic"/>
-    </section>
+     </main>
+    
 
     <!--footer-->
     <hr>
