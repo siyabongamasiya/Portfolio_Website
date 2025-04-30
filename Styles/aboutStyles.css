@@ -9,16 +9,20 @@
 }
 
 header{
-    width: auto;
-    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    z-index: 1000;     
+    background-color: #10B981;
     display: flex;
     flex-direction: row;
-    background-color: #10B981;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    margin-bottom: 30px;
-}
+    box-sizing: border-box
+  }
+  
 
 .logo > img{
     width: 2vw;
@@ -29,6 +33,7 @@ header{
 body {
     background-color: #818ca5;
     color: white;
+    padding-top: calc( 16px * 2 + 30px + 0px );
 }
 
 h2{
@@ -49,4 +54,10 @@ footer{
     background-color: #10B981;
     padding: 16px;
     margin-top: 100px;
+}
+
+@media (max-width: 834px){
+    .logo > img{
+        width: 5vw;
+    }
 }
