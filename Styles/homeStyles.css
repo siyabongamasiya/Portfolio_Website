@@ -16,7 +16,7 @@ header{
 body{
     background-color: #818ca5;
     color: white;
-    padding-top: calc( 16px * 2 + 30px + 0px );
+    padding-top: 64px;
 }
 
 #titleSection{
